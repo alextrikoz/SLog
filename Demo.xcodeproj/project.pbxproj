@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2145871C17FC095800651669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145871B17FC095800651669 /* Foundation.framework */; };
+		2145871E17FC095800651669 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145871D17FC095800651669 /* CoreGraphics.framework */; };
+		2145872017FC095800651669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145871F17FC095800651669 /* UIKit.framework */; };
+		2145873517FC095900651669 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145873417FC095900651669 /* XCTest.framework */; };
+		2145873617FC095900651669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145871B17FC095800651669 /* Foundation.framework */; };
+		2145873717FC095900651669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2145871F17FC095800651669 /* UIKit.framework */; };
+		2145873F17FC095A00651669 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2145873D17FC095A00651669 /* InfoPlist.strings */; };
+		2145874117FC095A00651669 /* SLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2145874017FC095A00651669 /* SLogTests.m */; };
+		2145874C17FC0A4A00651669 /* SLogCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2145874B17FC0A4A00651669 /* SLogCore.m */; };
+		2145875217FC101600651669 /* SLogListScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2145875117FC101600651669 /* SLogListScreen.m */; };
+		2145875717FC137700651669 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2145875617FC137700651669 /* Default-568h@2x.png */; };
+		2145875A17FC151A00651669 /* SLogDetailedScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2145875917FC151A00651669 /* SLogDetailedScreen.m */; };
+		2192820817FEA519009A6FDB /* SLogDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2192820717FEA519009A6FDB /* SLogDateCell.m */; };
+		2192821017FEBBA7009A6FDB /* SLogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2192820F17FEBBA7009A6FDB /* SLogMessage.m */; };
+		21A85E9317FC35FD00403EED /* SLogNoDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A85E9217FC35FD00403EED /* SLogNoDateCell.m */; };
+		21A85E9517FC3FD600403EED /* Trash.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A85E9417FC3FD600403EED /* Trash.png */; };
+		21A85E9917FC48F000403EED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A85E9617FC48F000403EED /* main.m */; };
+		21A85E9A17FC48F000403EED /* Demo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A85E9717FC48F000403EED /* Demo-Info.plist */; };
+		21A85E9C17FC48FD00403EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A85E9B17FC48FD00403EED /* InfoPlist.strings */; };
+		21A85EA117FC491E00403EED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A85E9E17FC491E00403EED /* AppDelegate.m */; };
+		21A85EA217FC491E00403EED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A85EA017FC491E00403EED /* ViewController.m */; };
+		21A85EA517FC4C9700403EED /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A85EA417FC4C9700403EED /* MessageUI.framework */; };
+		21AE13EC17FEC0D10078A85B /* SLogSuperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AE13EB17FEC0D10078A85B /* SLogSuperCell.m */; };
+		21AE13F017FEC1B60078A85B /* SLogGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AE13EF17FEC1B60078A85B /* SLogGroup.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2145873817FC095900651669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2145871017FC095800651669 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2145871717FC095800651669;
+			remoteInfo = FLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2145871817FC095800651669 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2145871B17FC095800651669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2145871D17FC095800651669 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2145871F17FC095800651669 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2145873317FC095900651669 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2145873417FC095900651669 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2145873C17FC095A00651669 /* SLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLogTests-Info.plist"; sourceTree = "<group>"; };
+		2145873E17FC095A00651669 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2145874017FC095A00651669 /* SLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLogTests.m; sourceTree = "<group>"; };
+		2145874A17FC0A4A00651669 /* SLogCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogCore.h; sourceTree = "<group>"; };
+		2145874B17FC0A4A00651669 /* SLogCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogCore.m; sourceTree = "<group>"; };
+		2145875017FC101600651669 /* SLogListScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogListScreen.h; sourceTree = "<group>"; };
+		2145875117FC101600651669 /* SLogListScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogListScreen.m; sourceTree = "<group>"; };
+		2145875617FC137700651669 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2145875817FC151A00651669 /* SLogDetailedScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogDetailedScreen.h; sourceTree = "<group>"; };
+		2145875917FC151A00651669 /* SLogDetailedScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogDetailedScreen.m; sourceTree = "<group>"; };
+		2192820617FEA519009A6FDB /* SLogDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogDateCell.h; sourceTree = "<group>"; };
+		2192820717FEA519009A6FDB /* SLogDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogDateCell.m; sourceTree = "<group>"; };
+		2192820917FEA942009A6FDB /* SLogSuperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogSuperCell.h; sourceTree = "<group>"; };
+		2192820E17FEBBA7009A6FDB /* SLogMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogMessage.h; sourceTree = "<group>"; };
+		2192820F17FEBBA7009A6FDB /* SLogMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogMessage.m; sourceTree = "<group>"; };
+		21A85E9117FC35FD00403EED /* SLogNoDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogNoDateCell.h; sourceTree = "<group>"; };
+		21A85E9217FC35FD00403EED /* SLogNoDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogNoDateCell.m; sourceTree = "<group>"; };
+		21A85E9417FC3FD600403EED /* Trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trash.png; path = ../Trash.png; sourceTree = "<group>"; };
+		21A85E9617FC48F000403EED /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21A85E9717FC48F000403EED /* Demo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		21A85E9817FC48F000403EED /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		21A85E9B17FC48FD00403EED /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		21A85E9D17FC491E00403EED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Demo/AppDelegate.h; sourceTree = "<group>"; };
+		21A85E9E17FC491E00403EED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Demo/AppDelegate.m; sourceTree = "<group>"; };
+		21A85E9F17FC491E00403EED /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Demo/ViewController.h; sourceTree = "<group>"; };
+		21A85EA017FC491E00403EED /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Demo/ViewController.m; sourceTree = "<group>"; };
+		21A85EA417FC4C9700403EED /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		21AE13EB17FEC0D10078A85B /* SLogSuperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogSuperCell.m; sourceTree = "<group>"; };
+		21AE13EE17FEC1B60078A85B /* SLogGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLogGroup.h; sourceTree = "<group>"; };
+		21AE13EF17FEC1B60078A85B /* SLogGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLogGroup.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2145871517FC095800651669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A85EA517FC4C9700403EED /* MessageUI.framework in Frameworks */,
+				2145871E17FC095800651669 /* CoreGraphics.framework in Frameworks */,
+				2145872017FC095800651669 /* UIKit.framework in Frameworks */,
+				2145871C17FC095800651669 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2145873017FC095900651669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145873517FC095900651669 /* XCTest.framework in Frameworks */,
+				2145873717FC095900651669 /* UIKit.framework in Frameworks */,
+				2145873617FC095900651669 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2145870F17FC095800651669 = {
+			isa = PBXGroup;
+			children = (
+				2145875617FC137700651669 /* Default-568h@2x.png */,
+				21A85EA317FC492400403EED /* Demo */,
+				2145872117FC095800651669 /* SLog */,
+				2145872217FC095800651669 /* Supporting Files */,
+				2145873A17FC095900651669 /* SLogTests */,
+				2145871A17FC095800651669 /* Frameworks */,
+				2145871917FC095800651669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2145871917FC095800651669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2145871817FC095800651669 /* Demo.app */,
+				2145873317FC095900651669 /* DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2145871A17FC095800651669 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21A85EA417FC4C9700403EED /* MessageUI.framework */,
+				2145871B17FC095800651669 /* Foundation.framework */,
+				2145871D17FC095800651669 /* CoreGraphics.framework */,
+				2145871F17FC095800651669 /* UIKit.framework */,
+				2145873417FC095900651669 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2145872117FC095800651669 /* SLog */ = {
+			isa = PBXGroup;
+			children = (
+				2145874A17FC0A4A00651669 /* SLogCore.h */,
+				2145874B17FC0A4A00651669 /* SLogCore.m */,
+				2145875017FC101600651669 /* SLogListScreen.h */,
+				2145875117FC101600651669 /* SLogListScreen.m */,
+				2145875817FC151A00651669 /* SLogDetailedScreen.h */,
+				2145875917FC151A00651669 /* SLogDetailedScreen.m */,
+				2192820917FEA942009A6FDB /* SLogSuperCell.h */,
+				21AE13EB17FEC0D10078A85B /* SLogSuperCell.m */,
+				2192820617FEA519009A6FDB /* SLogDateCell.h */,
+				2192820717FEA519009A6FDB /* SLogDateCell.m */,
+				21A85E9117FC35FD00403EED /* SLogNoDateCell.h */,
+				21A85E9217FC35FD00403EED /* SLogNoDateCell.m */,
+				21AE13EE17FEC1B60078A85B /* SLogGroup.h */,
+				21AE13EF17FEC1B60078A85B /* SLogGroup.m */,
+				2192820E17FEBBA7009A6FDB /* SLogMessage.h */,
+				2192820F17FEBBA7009A6FDB /* SLogMessage.m */,
+				21A85E9417FC3FD600403EED /* Trash.png */,
+			);
+			path = SLog;
+			sourceTree = "<group>";
+		};
+		2145872217FC095800651669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21A85E9B17FC48FD00403EED /* InfoPlist.strings */,
+				21A85E9617FC48F000403EED /* main.m */,
+				21A85E9717FC48F000403EED /* Demo-Info.plist */,
+				21A85E9817FC48F000403EED /* Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = SLog;
+			sourceTree = "<group>";
+		};
+		2145873A17FC095900651669 /* SLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				2145874017FC095A00651669 /* SLogTests.m */,
+				2145873B17FC095A00651669 /* Supporting Files */,
+			);
+			path = SLogTests;
+			sourceTree = "<group>";
+		};
+		2145873B17FC095A00651669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2145873C17FC095A00651669 /* SLogTests-Info.plist */,
+				2145873D17FC095A00651669 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21A85EA317FC492400403EED /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				21A85E9D17FC491E00403EED /* AppDelegate.h */,
+				21A85E9E17FC491E00403EED /* AppDelegate.m */,
+				21A85E9F17FC491E00403EED /* ViewController.h */,
+				21A85EA017FC491E00403EED /* ViewController.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2145871717FC095800651669 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2145874417FC095A00651669 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				2145871417FC095800651669 /* Sources */,
+				2145871517FC095800651669 /* Frameworks */,
+				2145871617FC095800651669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = FLog;
+			productReference = 2145871817FC095800651669 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2145873217FC095900651669 /* DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2145874717FC095A00651669 /* Build configuration list for PBXNativeTarget "DemoTests" */;
+			buildPhases = (
+				2145872F17FC095900651669 /* Sources */,
+				2145873017FC095900651669 /* Frameworks */,
+				2145873117FC095900651669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2145873917FC095900651669 /* PBXTargetDependency */,
+			);
+			name = DemoTests;
+			productName = FLogTests;
+			productReference = 2145873317FC095900651669 /* DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2145871017FC095800651669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Alexander;
+				TargetAttributes = {
+					2145873217FC095900651669 = {
+						TestTargetID = 2145871717FC095800651669;
+					};
+				};
+			};
+			buildConfigurationList = 2145871317FC095800651669 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2145870F17FC095800651669;
+			productRefGroup = 2145871917FC095800651669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2145871717FC095800651669 /* Demo */,
+				2145873217FC095900651669 /* DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2145871617FC095800651669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145875717FC137700651669 /* Default-568h@2x.png in Resources */,
+				21A85E9C17FC48FD00403EED /* InfoPlist.strings in Resources */,
+				21A85E9517FC3FD600403EED /* Trash.png in Resources */,
+				21A85E9A17FC48F000403EED /* Demo-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2145873117FC095900651669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145873F17FC095A00651669 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2145871417FC095800651669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A85EA217FC491E00403EED /* ViewController.m in Sources */,
+				21A85E9917FC48F000403EED /* main.m in Sources */,
+				2192821017FEBBA7009A6FDB /* SLogMessage.m in Sources */,
+				21A85E9317FC35FD00403EED /* SLogNoDateCell.m in Sources */,
+				21AE13EC17FEC0D10078A85B /* SLogSuperCell.m in Sources */,
+				21A85EA117FC491E00403EED /* AppDelegate.m in Sources */,
+				2192820817FEA519009A6FDB /* SLogDateCell.m in Sources */,
+				21AE13F017FEC1B60078A85B /* SLogGroup.m in Sources */,
+				2145874C17FC0A4A00651669 /* SLogCore.m in Sources */,
+				2145875217FC101600651669 /* SLogListScreen.m in Sources */,
+				2145875A17FC151A00651669 /* SLogDetailedScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2145872F17FC095900651669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2145874117FC095A00651669 /* SLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2145873917FC095900651669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2145871717FC095800651669 /* Demo */;
+			targetProxy = 2145873817FC095900651669 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2145873D17FC095A00651669 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2145873E17FC095A00651669 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2145874217FC095A00651669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2145874317FC095A00651669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2145874517FC095A00651669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = Demo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2145874617FC095A00651669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = Demo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2145874817FC095A00651669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FLog.app/FLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLog/FLog-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FLogTests/SLogTests-Info.plist";
+				PRODUCT_NAME = DemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2145874917FC095A00651669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FLog.app/FLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLog/FLog-Prefix.pch";
+				INFOPLIST_FILE = "FLogTests/SLogTests-Info.plist";
+				PRODUCT_NAME = DemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2145871317FC095800651669 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2145874217FC095A00651669 /* Debug */,
+				2145874317FC095A00651669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2145874417FC095A00651669 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2145874517FC095A00651669 /* Debug */,
+				2145874617FC095A00651669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2145874717FC095A00651669 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2145874817FC095A00651669 /* Debug */,
+				2145874917FC095A00651669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2145871017FC095800651669 /* Project object */;
+}
